@@ -1,0 +1,23 @@
+//
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+//
+@import "./var";
+@import "./reset";
+@import "./header";
+@import "./main";
+@import "./reputation";
+@import "./about";
+@import "./services";
+@import "./constultation";
+@import "./projects";
+//  containers
+html,
+body {
+  height: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}

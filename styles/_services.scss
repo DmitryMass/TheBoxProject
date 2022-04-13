@@ -1,0 +1,55 @@
+.services {
+    background-color: $white-gray;
+    padding: 47px 0 75px;
+    &__title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__menu {
+        display:  flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin:  0 -50px;
+        row-gap: 50px;
+        @media screen and (max-width: 1200px) {
+            justify-content: center;
+        }
+    }
+    &__box {
+        padding: 0 50px;
+        flex:  0 1 33.333%;
+    }
+    &__item {
+        min-height: 180px;
+        width: 270px;
+        &-white {
+            background-color: $white;
+        }
+        &-blue {
+            background-color: $dark-blue;
+        }
+    }
+    &__obj {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        width: 60px;
+    }
+    &__h5 {
+        &-white {
+            color: $white;
+        }
+        &-blue {
+            color: $dark-blue;
+        }
+    }
+}
+.border {
+    &__white {
+        border-bottom: 3px solid $white;
+    }
+    &__gray {
+        border-bottom: 3px solid #E0E3EB;
+    }
+}

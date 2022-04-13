@@ -1,0 +1,120 @@
+.projects {
+    padding: 90px 0px 140px;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        min-height: 780px;
+    }
+    &__item {
+        font-size: $md-24;
+        line-height: $lh-28;
+        font-weight: 500;
+        color: $neutral;
+        cursor: pointer;
+        padding-left: 20px;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+        border-left: 4px solid transparent;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-active {
+            color: $dark-blue;
+            font-weight: 700;
+            border-left: 4px solid $dark-blue;
+        }
+    }
+    //
+    &__builds {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__build {
+        &>img {
+            max-width: 100%
+        };
+    }
+    &__description {
+        padding: 12px 0 16px 12px;
+        background-color: $dark-blue;
+        color: $white;
+    }
+    &__txt {
+        font-size: $sm-18;
+        line-height: $lh-21;
+        margin-top: 12px;
+    }
+    &__prev, &__next {
+        width: 295px;
+        height: 65px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    // dots
+    &__dot {
+        display: inline-block;
+        margin: 0 8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $neutral;
+    }
+    // 
+    &__more {
+        width: 100%;
+        height: 65px;
+        margin-top: 35px;
+        background-color: $black;
+        display: flex;
+        justify-content: center;align-items: center;
+        &>a {
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        }
+    }
+}
+
+
+
+.head {
+    &-hello {
+        font: 100;
+    }
+}
+
+
+// Tabs animation 
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.fade {
+    animation-name: box-anima;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes box-anima {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

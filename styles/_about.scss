@@ -1,0 +1,43 @@
+.about {
+    margin-bottom: 200px;
+    &__us {
+        position: relative;
+    }
+    &__img {
+        max-width: 100%;
+        max-height: 670px;
+        box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+        border-radius: 2px;
+    }
+    &__infoBox {
+        display: flex;
+        width: 490px;
+        padding: 50px 0px 60px 40px;
+        background-color: $dark-blue;
+        color: $white;
+        position: absolute;
+        top: 73px;
+        right: 0;
+    }
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__txt {
+        font-size: $md-20;
+        line-height: $lh-23;
+    }
+    &__btn {
+        border: 2px solid #2947A9;
+        background-color: $white;
+        border-radius: 6px;
+        padding: 16px 20px;
+        font-size: $sm-18;
+        line-height: $lh-21;
+        font-weight: 600;
+        color: $dark-blue;
+        margin-top: 75px;
+    }
+    &__inner {
+        max-width: 388px;
+    }
+}

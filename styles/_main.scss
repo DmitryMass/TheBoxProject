@@ -1,0 +1,86 @@
+.main {
+  position: relative;
+  height: calc(100vh - 80px);
+  background-image: url(../../assets/images/img-bgc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.9) 16.58%,
+      rgba(255, 255, 255, 0) 72.38%
+    );
+  }
+  &__about {
+    position: relative;
+    max-width: 555px;
+  }
+  &__fixed {
+    max-width: 416px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    z-index: 5;
+  }
+  &__slider {
+    text-align: center;
+    background-color: $blue;
+    width: 100%;
+  }
+  &__title {
+    color: $white;
+    padding: 20px 0;
+  }
+  &__subtitle {
+    color: $white;
+    padding-bottom: 26px;
+  }
+  &__navigation {
+    justify-content: space-between;
+    gap: 1px;
+    background-color: $white;
+  }
+  &__anima {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &.active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+}
+
+// slider 
+
+.main {
+  &__inner {
+    display: flex;
+    transition: 0.5s all;
+  }
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+}
+
+.next,
+.back {
+  gap: 10px;
+  width: 208px;
+  height: 40px;
+}
+.clicked {
+  transform: translateY(-1px);
+  transform-origin: center;
+  box-shadow: 0px 1px 0px black;
+}

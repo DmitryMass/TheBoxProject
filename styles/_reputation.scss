@@ -1,0 +1,48 @@
+.reputation {
+  margin: 60px 0px 85px 0px;
+  &__row {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__column {
+    padding: 0 30px;
+    flex: 0 1 33.333%;
+    @media screen and (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__item {
+    min-height: 200px;
+    padding: 20px;
+    border: 1.4px solid #e0e3eb;
+    border-radius: 4px;
+  }
+  &__txt {
+    color: $gray;
+    font-size: $sm-16;
+    line-height: $lh-19;
+  }
+  &__title {
+    margin: 0 auto;
+    max-width: 275px;
+    margin-bottom: 50px;
+  }
+  &__anima {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+    &.active {
+      transform: scale(1);
+      opacity: 1;
+      
+    }
+  }
+}
+.item {
+  &__title {
+    margin: 20px 0;
+  }
+}

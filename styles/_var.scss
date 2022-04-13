@@ -1,0 +1,121 @@
+//  mixins
+@mixin container($width) {
+  max-width: $width;
+  padding: 0 25px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.container {
+  @include container(1215px);
+  @media screen and (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: none;
+  }
+}
+.services__container {
+  @include container(1010px);
+  @media screen and (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: none;
+  }
+}
+
+.c__width {
+  width: 100%;
+}
+//  flex-containers
+
+.d-flex {
+  display: flex;
+}
+.flex__centering {
+  display: flex;
+  align-items: center;
+}
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex__consultation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//  colors
+$white: #ffffff;
+$black: #14171f;
+$blue: #3559c7;
+$dark-blue: #2947a9;
+$orange: #f9995d;
+$gray: #858ead;
+$white-gray:  #F6F8F7;;
+$black-neutral: #292e3d;
+$neutral: #C2C7D6;
+
+//  font-sizes
+$md-24: 24px;
+$md-20: 20px;
+$sm-18: 18px;
+$sm-16: 16px;
+//  line-heights;
+$lh-28: 28px;
+$lh-23: 23px;
+$lh-21: 21px;
+$lh-19: 19px;
+
+//  Selectors
+.h1 {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: 600;
+  color: $black-neutral;
+  
+}
+.h2 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.h3 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+}
+.h4 {
+  font-size: $md-24;
+  line-height: $lh-28;
+}
+.h5 {
+  font-size: $md-20;
+  line-height: $lh-23;
+  font-weight: 700;
+}
+
+.p-reputation {
+  font-size: $sm-16;
+  line-height: $lh-19;
+  color: $gray;
+}
+.black__btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14171f;
+  cursor: pointer;
+}
