@@ -930,19 +930,39 @@ li {
   height: 65px;
   margin-top: 35px;
   background-color: #14171f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .projects__more > a {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.head-hello {
-  font: 100;
+.projects__anima {
+  transform: translate(-120%, 0);
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+}
+
+.projects__anima.active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.build__anima {
+  transform: scale(0);
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+}
+
+.build__anima.active {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .hide {
